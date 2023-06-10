@@ -1,0 +1,138 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+.container {
+  height: 100%;
+  background-image: linear-gradient(to right, #4daf54, #3d8880);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.container .box {
+  background-color: #272d40;
+  width: 320px;
+  height: 400px;
+  padding: 20px 20px;
+  border-radius: 15px;
+  font-family: "Poppins", sans-serif;
+}
+.container .box .header {
+  display: flex;
+  justify-content: space-between;
+}
+.container .box .header .far,
+.container .box .header .fab {
+  color: #fff;
+  font-size: 20px;
+}
+.container .box .header .far:hover,
+.container .box .header .fab:hover {
+  cursor: pointer;
+}
+.container .box .content .img {
+  padding: 0px 10px;
+  position: relative;
+  right: 16px;
+  top: 0px;
+  transition: top 1.5s;
+}
+.container .box .content .name {
+  position: relative;
+  top: 0px;
+  right: 0px;
+  color: #4daf54;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 10px 0px;
+  transition: 1.5s;
+}
+.container .box .content .price {
+  position: relative;
+  right: 0px;
+  top: 0px;
+  text-align: center;
+  color: #fff;
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transition: 1.5s;
+}
+.container .box .content .hide {
+  position: relative;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  opacity: 0;
+  transition: 1.5s;
+}
+.container .box .content .hide .size {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.container .box .content .hide .size .text {
+  color: #fff;
+  font-size: 18px;
+}
+.container .box .content .hide .size .items {
+  padding: 5px 10px;
+  background: #dadada;
+  border-radius: 6px;
+  font-size: 16px;
+}
+.container .box .content .hide .size .items:hover {
+  cursor: pointer;
+}
+.container .box .content .hide .color {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.container .box .content .hide .color .text {
+  color: #fff;
+  font-size: 18px;
+}
+.container .box .content .hide .color .items {
+  font-size: 20px;
+}
+.container .box .content .hide .color .items:hover {
+  cursor: pointer;
+}
+.container .box .content .hide .button button {
+  background-color: #4daf54;
+  color: #fff;
+  padding: 10px 20px;
+  margin-right: 5px;
+  font-family: 600;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+}
+.container .box .content .hide .button button:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.container .box:hover .content .img {
+  top: -80px;
+  right: 16px;
+  transform: rotate(-20deg);
+}
+.container .box:hover .content .name {
+  top: -80px;
+  right: 40px;
+}
+.container .box:hover .content .price {
+  top: -80px;
+  right: 110px;
+}
+.container .box:hover .content .hide {
+  opacity: 1;
+  top: -45px;
+}/*# sourceMappingURL=style.css.map */
