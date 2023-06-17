@@ -13,8 +13,8 @@
   align-items: center;
 }
 .container .input {
-  position: relative;
-  top: -200px;
+  position: fixed;
+  top: 110px;
 }
 .container .input .input-todo {
   font-size: 24px;
@@ -71,9 +71,9 @@
   border: none;
   color: #fff;
   background-color: #2aa64b;
-  position: relative;
-  top: -200px;
-  right: 70px;
+  position: fixed;
+  top: 117px;
+  right: 580px;
 }
 .container button:hover {
   opacity: 0.8;
