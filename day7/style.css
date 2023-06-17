@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  background-image: linear-gradient(to right, #f3f520, #51c26f);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .input {
+  position: relative;
+  top: -200px;
+}
+.container .input .input-todo {
+  font-size: 24px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+  width: 400px;
+}
+.container .input .input-todo.bbr {
+  border-bottom: solid 1px #ddd;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.container .input .todo-block {
+  position: absolute;
+}
+.container .input .todo-block .todo {
+  display: flex;
+  width: 400px;
+  background: #fff;
+  padding: 10px 15px;
+  justify-content: space-between;
+  border-bottom: solid 1px #ddd;
+  font-size: 24px;
+}
+.container .input .todo-block .todo:last-child {
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.container .input .todo-block .todo .todo-list.clicked {
+  color: #949292;
+  text-decoration: line-through;
+}
+.container .input .todo-block .todo .material-symbols-outlined {
+  display: none;
+  font-variation-settings: "FILL" 0, "wght" 600, "GRAD" 200, "opsz" 24;
+  color: #696767;
+}
+.container .input .todo-block .todo .material-symbols-outlined:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+.container .input .todo-block .todo:hover {
+  cursor: pointer;
+}
+.container .input .todo-block .todo:hover .material-symbols-outlined {
+  display: block;
+}
+.container button {
+  font-size: 20px;
+  padding: 5px 12px;
+  border-radius: 6px;
+  border: none;
+  color: #fff;
+  background-color: #2aa64b;
+  position: relative;
+  top: -200px;
+  right: 70px;
+}
+.container button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
